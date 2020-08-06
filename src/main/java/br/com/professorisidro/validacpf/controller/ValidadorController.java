@@ -18,5 +18,12 @@ public class ValidadorController {
 		}
 		 return "{\"status\": \"invalido\"}";
 	}
+    //caminho do site a gente criou
+	@GetMapping("/")
+	public String index() {
+	
+		 return "{\"mensagem\": \"Bem vindo a API turma 6 Itau\"}";
+	}
+
 
 }
