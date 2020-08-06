@@ -12,7 +12,6 @@ import br.com.professorisidro.validacpf.service.Validador;
 public class ValidadorController {
 	
 	@GetMapping("/validacpf")
-	//@GetMapping("/")
 	public String validaCPF(@RequestParam String cpf) {
 		if (Validador.isCPF(cpf)) {
 			return "{\"status\": \"valido\"}";
